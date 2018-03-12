@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <h1 id="header">Crystal Collector!</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-12" id="instructions">
+                <p>You will be given a random number at the start of the game.</p>
+                <br>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <br>
+                <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
+                <br>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <br>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <img class="img img-responsive crystal" id="redCrystal" src="assets/images/redCrystal.png" alt="red crystal">
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <img class="img img-responsive crystal" id="purpleCrystal" src="assets/images/purpleCrystal.png" alt="purple crystal">
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <img class="img img-responsive crystal" id="yellowCrystal" src="assets/images/Zircon.png" alt="yellow crystal">
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <img class="img img-responsive crystal" id="blueCrystal" src="assets/images/blueCrystal.png" alt="blue crystal">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col score" id="goal">
+                <h3>Goal</h3>
+            </div>
+            <div class="col">
+            </div>
+            <div class="col score" id="currentScore">
+                <h3>Current score</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col boxy">
+                <h1 class="scoreText" id="endGoal"></h1>
+            </div>
+            <div class="col boxy">
+                <h5>Total wins: <span id="totalWins"></span></h5>
+                <h5>Total losses: <span id="totalLosses"></span></h5>
+            </div>          
+            <div class="col boxy">
+                <h1 class="scoreText" id="userScore"></h1>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
